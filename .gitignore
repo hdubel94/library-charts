@@ -1,0 +1,33 @@
+# .gitignore
+
+# IDE resources
+.vscode
+.idea
+.devcontainer/
+
+# Helm resources
+stable/*/Chart.lock
+stable/*/charts
+incubator/*/Chart.lock
+incubator/*/charts
+
+# Ignore Helm chart packages
+*.tgz
+
+# Ignore Helm chart dependencies
+charts/*.tgz
+charts/*.lock
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Other rsources
+.env
+.deploy/
+Gemfile.lock
